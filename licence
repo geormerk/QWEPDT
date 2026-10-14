@@ -1,26 +1,119 @@
-Software Licence
-Copyright (c) 2025 geormerk , johnylil
+QWEPDT (QUANTUM-WALK ENHANCED, PARRONDO-DRIVEN DECISION TREES)
+INTELLECTUAL PROPERTY, ALGORITHM, AND SOFTWARE LICENSE
+(NON-COMMERCIAL ACADEMIC & RESEARCH USE ONLY)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Copyright (c) 2025-2026 Georgios-Marios Merkouris (geormerk)
+All Rights Reserved.
 
-The above copyright notice, this permission notice, and the following attribution 
-notice shall be included in all copies or substantial portions of the Software:
+================================================================================
+1. DEFINITIONS AND SCOPE OF COVERED WORK
+================================================================================
+This License governs all intellectual property, materials, assets, and concepts 
+associated with "Quantum-Walk Enhanced, Parrondo-Driven Decision Trees" (herein 
+referred to as "QWEPDT"), created and authored by Georgios-Marios Merkouris 
+(geormerk), whether published in this repository, associated repositories, 
+pre-prints, or publications. 
 
-This software or derivative works thereof must include proper attribution to 
-the original authors: 
-Georgios-Marios Merkouris (geormerk) (GitHub: https://github.com/geormerk) and
-Ioannis Liliopoulos (johnylil) (Github: https://github.com/johnylil)
+The "Covered Work" explicitly encompasses, without limitation:
+  a. THE ALGORITHMIC CONCEPTS AND LOGIC: The conceptual model, mathematical 
+     foundations, formulations, coin/shift quantum-walk dynamics, Parrondo-game 
+     mechanisms, branching/splitting criteria, state updates, pseudocode, and 
+     hybrid stochastic logic governing QWEPDT.
+  b. SOURCE CODE AND IMPLEMENTATIONS: All source code, scripts, compiled binaries, 
+     libraries, tests, configuration files, and software implementations in any 
+     programming language.
+  c. VISUAL AND STRUCTURAL ASSETS: All flowcharts, architecture diagrams, state 
+     transition diagrams, circuit analogies, plots, schemas, visual workflows, 
+     and graphical representations of QWEPDT.
+  d. DOCUMENTATION AND METHODOLOGIES: All written specifications, design notes, 
+     technical methodologies, training pipelines, data preparation workflows, 
+     and associated documentation.
 
+================================================================================
+2. GRANT OF CONDITIONAL LICENSE (RESEARCH & EDUCATION ONLY)
+================================================================================
+Permission is hereby granted, free of charge, to any person obtaining a copy or 
+gaining access to the Covered Work, to inspect, study, execute, benchmark, compile, 
+and modify the Covered Work SOLELY for non-commercial, non-monetary, educational, 
+and academic research purposes, subject to the conditions set forth herein.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+================================================================================
+3. STRICT COMMERCIAL AND MONETARY RESTRICTIONS
+================================================================================
+Any exploitation, integration, or utilization of the Covered Work—in whole or in 
+part, directly or indirectly—for commercial, monetary, enterprise, or revenue-
+generating purposes is STRICTLY PROHIBITED without the prior express written 
+consent and a separate commercial license executed by Georgios-Marios Merkouris.
+
+Prohibited commercial activities include, but are not limited to:
+  a. Selling, licensing, leasing, sublicensing, or distributing the Covered Work 
+     or any derived variant for a fee.
+  b. Incorporating the Covered Work into any proprietary software, commercial 
+     platform, SaaS (Software-as-a-Service), cloud API, or commercial enterprise 
+     pipeline.
+  c. Using the QWEPDT algorithm or derivatives to optimize trading systems, 
+     commercial risk models, enterprise decision-making tools, or proprietary 
+     prediction systems generating direct or indirect financial yield.
+  d. Offering paid training, consulting, integration, or hosting services built 
+     around QWEPDT without authorization.
+
+================================================================================
+4. RE-IMPLEMENTATION, TRANSLATION, AND DERIVATIVE RESTRICTIONS
+================================================================================
+The restrictions of this License attach directly to the mathematical design, 
+workflows, and algorithmic architecture of QWEPDT:
+  a. You may NOT transcribe, port, re-encode, or re-implement the QWEPDT 
+     mathematical formulation, workflows, or algorithmic mechanisms into another 
+     programming language, hardware platform (including GPUs, FPGAs, ASICs, or 
+     Quantum Processing Units/QPUs), or framework for commercial or monetary use.
+  b. Re-implementations for academic research are permitted only if they retain 
+     and respect all attribution, ownership, and non-commercial terms outlined 
+     in Section 5 and Section 6.
+
+================================================================================
+5. MANDATORY ATTRIBUTION, CITATION, AND INVENTORSHIP RECOGNITION
+================================================================================
+Any academic paper, pre-print, thesis, conference proceeding, technical report, 
+benchmark, lecture, or derived open-source project that uses, implements, 
+evaluates, modifies, or compares QWEPDT must fulfill the following mandatory 
+conditions:
+  a. EXPLICIT OWNERSHIP ACKNOWLEDGMENT: Prominently state and recognize that 
+     Georgios-Marios Merkouris (geormerk) is the original inventor, creator, 
+     and sole rights holder of the QWEPDT algorithm, architecture, and code.
+  b. FORMAL CITATION: Formally cite the original repository and any corresponding 
+     canonical paper or technical report published by the author.
+  c. IDENTIFYING INFORMATION: Retain clear references to:
+       Creator: Georgios-Marios Merkouris (geormerk)
+       Repository: https://github.com/geormerk/QWEPDT  (or appropriate project URL)
+       Author Profile: https://github.com/geormerk
+
+================================================================================
+6. INTELLECTUAL PROPERTY AND RESERVATION OF RIGHTS
+================================================================================
+Georgios-Marios Merkouris retains all right, title, interest, copyright, trade 
+secret, and patent rights (whether existing, pending, or applied for in the future) 
+in and to the Covered Work, including all underlying logic, novel mechanics, 
+diagrams, workflows, and code. 
+
+Nothing in this License shall be construed as transferring, assigning, or waiving 
+any patent, trademark, or proprietary ownership rights to any user, institution, 
+or entity. Modifications or derivative works do not transfer ownership of the 
+underlying QWEPDT architecture.
+
+================================================================================
+7. PRESERVATION OF NOTICES
+================================================================================
+This entire License text, the copyright notice, and all attribution requirements 
+must be included in all copies, substantial portions, extracts, or derived 
+materials of the Covered Work, including in the documentation of any academic 
+re-implementation.
+
+================================================================================
+8. DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY
+================================================================================
+THE COVERED WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
+FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR 
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN 
+AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION 
+WITH THE COVERED WORK OR THE USE OR OTHER DEALINGS IN THE COVERED WORK.
