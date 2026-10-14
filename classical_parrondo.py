@@ -17,15 +17,14 @@ initial_capital = 16
 # ==========================================
 # 2. ΑΥΤΟΜΑΤΗ ΔΗΜΙΟΥΡΓΙΑ ΣΥΝΔΥΑΣΜΩΝ ΟΛΩΝ ΤΩΝ ΜΗΚΩΝ
 # ==========================================
-max_sequence_length = 10
+max_sequence_length = 5
 
 games = ['A', 'B']
-sequences_to_test = ["BBAABABABB"]
-#sequences_to_test = []
-#
-#for length in range(1, max_sequence_length + 1):
- #   for p in itertools.product(games, repeat=length):
-  #      sequences_to_test.append(''.join(p))
+sequences_to_test = []
+
+for length in range(1, max_sequence_length + 1):
+    for p in itertools.product(games, repeat=length):
+        sequences_to_test.append(''.join(p))
 
 # ==========================================
 # 3. ΜΗΧΑΝΙΣΜΟΣ ΠΑΙΓΝΙΩΝ 
@@ -92,14 +91,13 @@ items = list(results.items())
 plots_per_window = 4
 n_seq = len(items)
 colors = plt.cm.plasma(np.linspace(0, 0.8, n_seq))
-windows_opened=0
+
 # Σπάμε τη λίστα των αποτελεσμάτων σε ομάδες των 4
-start_index = 0  # Ξεκινάει κατευθείαν από τη σελίδα 341
-for i in range(start_index, n_seq, plots_per_window):
+for i in range(0, n_seq, plots_per_window):
     chunk = items[i:i + plots_per_window]
     
     # Φτιάχνουμε νέο παράθυρο 2x2 για την τρέχουσα τετράδα
-    fig, axes = plt.subplots(2, 2, figsize=(15, 8))
+    fig, axes = plt.subplots(2, 2, figsize=(12, 8))
     axes = axes.flatten()
     
     for j, (seq, data) in enumerate(chunk):
@@ -120,15 +118,15 @@ for i in range(start_index, n_seq, plots_per_window):
         ax.set_ylim(0, max(probs) + 15)
         
         # --- ΔΙΑΤΗΡΗΣΗ ΑΛΛΑΓΗΣ 3 (Η κόκκινη γραμμή, ο τίτλος και το legend παραμένουν ως είχαν) ---
-        #mean_val = np.mean(data)
-        #ax.axvline(mean_val, color='red', linestyle='dashed', linewidth=2, label=f'Μέσο: {mean_val:.2f}')
+        mean_val = np.mean(data)
+        #ax.axvline(mean_val, color='red', linestyle='dashed', linewidth=2, label=f'Mean: {mean_val:.2f}')
         
         ax.set_title(f'Sequence: {seq} (Steps: {actual_steps})', fontsize=12, fontweight='bold')
         ax.set_xlabel('Payoff', fontsize=10)
         ax.set_ylabel('Probability (%)', fontsize=10)
         
         ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
-        #ax.legend(loc='upper right')
+        ax.legend(loc='upper right')
         ax.grid(True, linestyle='--', alpha=0.6)
     
     # Αν η τελευταία ομάδα έχει λιγότερα από 4 γραφήματα, διαγράφουμε τα κενά κουτάκια
@@ -139,10 +137,6 @@ for i in range(start_index, n_seq, plots_per_window):
     total_pages = (n_seq + plots_per_window - 1) // plots_per_window
     plt.suptitle(f"Κατανομές Parrondo - Σελίδα {page_num} από {total_pages}", fontsize=14, fontweight='bold')
     plt.tight_layout()
-
-    windows_opened += 1
-    if windows_opened == 4:  # Θα ανοίξει ΜΟΝΟ 10 παράθυρα (δηλαδή 40 γραφήματα) και θα σταματήσει
-        break
 
 # Εμφάνιση όλων των παραθύρων ταυτόχρονα
 plt.show()
